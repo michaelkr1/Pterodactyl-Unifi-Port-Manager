@@ -4,9 +4,9 @@ A [Blueprint](https://blueprint.zip) extension for [Pterodactyl](https://pteroda
 automatically keeps UniFi port-forward rules and Zone-Based Firewall policies in sync with your
 servers' network allocations.
 
-Assign a server the allocation `192.168.100.10:8000` and this extension creates:
+Assign a server the allocation `192.168.1.10:8000` and this extension creates:
 
-- a UniFi port-forward rule: WAN → `192.168.100.10:8000` (TCP + UDP)
+- a UniFi port-forward rule: WAN → `192.168.1.10:8000` (TCP + UDP)
 - a UniFi firewall policy allowing that inbound traffic
 
 Both are removed automatically when the allocation is unassigned or the server is deleted.
