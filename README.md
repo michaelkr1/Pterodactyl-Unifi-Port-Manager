@@ -1,6 +1,13 @@
 ## Note:
 **Yes, this entire extension was written with Claude. I don't care if you have strong opinions about AI usage in development. This solved a gap I needed solving and it works well.**
 
+## License
+
+This project is licensed under GPL-3.0 with Commons Clause.
+
+Commercial use, resale, paid hosting, SaaS offerings, and paid support services based on this
+software are prohibited without prior written permission from the copyright holder.
+
 
 # UniFi Port Sync
 
