@@ -1,0 +1,1 @@
+- { Signature: "reconcile", Description: "Sync Pterodactyl server allocations to UniFi port-forward/firewall rules", Path: "reconcile.php", Interval: "everyMinute" }

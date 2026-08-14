@@ -1,0 +1,55 @@
+info:
+  # the name of your extension, write
+  # something creative! you can always change
+  # it later
+  name: 'UniFi Port Sync'
+
+  # the unique identifier of your extension,
+  # you can't really (easily) change this later
+  identifier: 'unifisync'
+
+  # shown to administrators on the extension's
+  # admin page
+  description: 'Automatically creates and removes matching UniFi port-forward rules and firewall policies whenever a server''s network allocations change.'
+
+  # the extension's version
+  version: '1.0.0'
+
+  # when this doesn't match a panel's blueprint
+  # version, they may see a warning about it
+  target: 'beta-2025-09'
+
+  # put your own name here
+  author: 'unifi-blueprint'
+
+admin:
+  # blade views are basically html with support for
+  # php logic!
+  view: 'admin/view.blade.php'
+
+  # when kept empty, blueprint will use a basic
+  # built-in controller
+  controller: 'admin/controller.php'
+
+  # injected into every admin page's shared layout -- used here to add the
+  # auto-configure dropdown to the core create-server page, which Blueprint
+  # has no dedicated extension point for
+  wrapper: 'admin/wrapper.blade.php'
+
+data:
+  # private directory that you can throw extra
+  # files in, accessible at {root/data} -- extension
+  # scripts (install.sh/update.sh/remove.sh) must live
+  # at the root of this directory
+  directory: 'data/scripts'
+
+  # directory for console commands (Console.yml)
+  console: 'data/console'
+
+requests:
+  # add additional php files in here!
+  app: 'data/app'
+
+database:
+  # directory with database migrations
+  migrations: 'data/migrations'
